@@ -17,6 +17,9 @@ header .icon{
 .about-profile{
     margin-right: 110px;
 }
+.about-profile h5{
+    color: grey;
+}
 .profile-image{
     margin-left: 80px;
     border-radius: 50%;
@@ -25,14 +28,19 @@ header .icon{
 }
 .contact-btn{
     border: none;
-    border-radius: 15px;
+    border-radius: 18px;
     background-color: hwb(207 25% 31%);
     color: white;
+    height: 2.3rem;
+    width: 8rem;
+    margin-right: 20px;
 }
 .about-btn{
     border-radius: 15px;
     background-color: hwb(204 76% 8%);
     color: black;
+    height: 2.3rem;
+    width: 8rem;
 }
 footer .page-footer{
     background-color: black;
