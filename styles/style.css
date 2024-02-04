@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu+Mono&display=swap');
 header{
     display: flex;
     margin-top: 15px;
@@ -42,10 +43,27 @@ header .icon{
     height: 2.3rem;
     width: 8rem;
 }
-footer .page-footer{
-    background-color: black;
+footer{
+    display: flex;
+    margin-top: 230px;
+    background-color: gray;
+    height: 5rem;
 }
 .nav a{
     color: grey;
     font-weight: bolder;
+}
+footer .dev{
+    padding-left: 5rem;
+    padding-right: 60rem;
+    padding-top: 15px;
+}
+footer .socialIcons i{
+    font-size: 25px;
+    margin: 15px 15px;
+    transition: 0.3s;
+    color: black;
+}
+footer .socialIcons i:hover{
+    color: rgb(235, 181, 80);
 }
