@@ -1,5 +1,10 @@
 header{
-    margin-top: 10px;
+    display: flex;
+    margin-top: 15px;
+}
+header .icon{
+    padding-right: 49rem;
+    padding-left: 5rem;
 }
 .container{
     display: flex;
@@ -31,4 +36,8 @@ header{
 }
 footer .page-footer{
     background-color: black;
+}
+.nav a{
+    color: grey;
+    font-weight: bolder;
 }
