@@ -2,21 +2,20 @@
 header{
     display: flex;
     margin-top: 15px;
+    position: fixed;
 }
 header .icon{
     padding-right: 49rem;
     padding-left: 5rem;
 }
-.container{
+section {
+    height: 100vh;
     display: flex;
-    margin: auto;
-    width: 60%;
-    padding: 10px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
 }
 .about-profile{
-    margin-right: 110px;
+    margin-right: 20rem;
 }
 .about-profile h5{
     color: grey;
@@ -27,43 +26,56 @@ header .icon{
     width: 270px;
     height: 270px;
 }
-.contact-btn{
+.more-about-me-btn{
     border: none;
     border-radius: 18px;
     background-color: hwb(207 25% 31%);
     color: white;
     height: 2.3rem;
-    width: 8rem;
+    width: 10rem;
     margin-right: 20px;
 }
-.about-btn{
-    border-radius: 15px;
-    background-color: hwb(204 76% 8%);
-    color: black;
-    height: 2.3rem;
-    width: 8rem;
-}
 footer{
-    display: flex;
-    margin-top: 230px;
     background-color: gray;
-    height: 5rem;
+    height: 13rem;
+    display: block;
+}
+footer .links{
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+footer .social-media-links{
+    padding: 10rem;
+}
+footer .contact-links{
+    padding: 10rem;
+}
+footer .about-links{
+    padding: 10rem;
+}
+footer p{
+    padding-left: 40%;
+}
+footer a{
+    color: black;
+    font-size: 17px;
+    transition: 0.2s;
 }
 .nav a{
     color: grey;
     font-weight: bolder;
 }
-footer .dev{
-    padding-left: 5rem;
-    padding-right: 60rem;
-    padding-top: 15px;
-}
-footer .socialIcons i{
-    font-size: 25px;
-    margin: 15px 15px;
-    transition: 0.3s;
+footer .links i{
+    font-size: 18px;
+    margin: 15px 8px;
+    transition: 0.2s;
     color: black;
 }
-footer .socialIcons i:hover{
+footer .links i:hover{
+    color: blue;
+}
+footer .links a:hover{
     color: blue;
 }
