@@ -92,3 +92,8 @@ footer .links i{
 footer .links i:hover{
     color: blue;
 }
+.flex{
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+}
