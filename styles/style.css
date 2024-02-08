@@ -3,6 +3,7 @@ nav{
     display: flex;
     margin-top: 15px;
     position: fixed;
+    opacity: 0.8;
 }
 nav .icon{
     padding-right: 49rem;
@@ -38,8 +39,16 @@ section {
 }
 .card{
     margin: 1.1rem;
-    width:500px
+    width:500px;
+    background-color:transparent;
 }
+.card .card-title{
+    color:black;
+}
+.card .card-text{
+    color:black;
+}
+
 .card-img-top{
     height: 12rem;
 }
