@@ -58,11 +58,6 @@ footer .about-links{
 footer p{
     padding-left: 40%;
 }
-footer a{
-    color: black;
-    font-size: 17px;
-    transition: 0.2s;
-}
 .nav a{
     color: grey;
     font-weight: bolder;
@@ -74,8 +69,5 @@ footer .links i{
     color: black;
 }
 footer .links i:hover{
-    color: blue;
-}
-footer .links a:hover{
     color: blue;
 }
