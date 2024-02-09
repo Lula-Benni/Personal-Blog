@@ -89,13 +89,44 @@ span .my-name{
 .card-img-top{
     height: 12rem;
 }
+.skills-header{
+    padding-top: 7rem;
+    padding-left: 45%;
+}
+.vl {
+    position:relative;
+    border-left: 6px solid black;
+    margin-top: 5rem;
+    height: 1000px;
+    right: 11.2rem;
+  }
+.other{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 23rem;
+}
+.other h2{
+    position: relative;
+    left: 33.5rem;
+}
+.first-education{
+    position: relative;
+    top: 5rem;
+    right: 15rem;
+}
+.first-experience{
+    position: relative;
+    right: 7.6rem;
+    padding-top: 38rem;
+}
 footer{
     display: block;
     bottom: 0;
     left: 0;
     width: 100%;
     position:relative;
-    margin-bottom: 0;
+    margin-top: 10rem;
 }
 footer .links{
     display: flex;
@@ -132,8 +163,4 @@ footer .links i:hover{
     display: flex;
     justify-content:center; 
     align-items: center;
-}
-.skills-header{
-    padding-top: 7rem;
-    padding-left: 45%;
 }
