@@ -34,7 +34,7 @@ section {
     margin-right: 20px;
 }
 .projects-header{
-    padding-top: 9rem;
+    padding-top: 7rem;
     padding-left: 45%;
 }
 .card{
@@ -96,4 +96,8 @@ footer .links i:hover{
     display: flex;
     justify-content:center; 
     align-items: center;
+}
+.skills-header{
+    padding-top: 7rem;
+    padding-left: 45%;
 }
