@@ -5,24 +5,48 @@ nav{
     position: fixed;
     opacity: 0.8;
 }
+nav .nav{
+    margin-right: 8rem;
+
+}
 nav .icon{
-    padding-right: 49rem;
-    padding-left: 5rem;
+    padding-left: 3rem;
+    height: 60px;
+    width: 113px;
+}
+nav .icon-name{
+    margin-right: 53rem;
 }
 section {
     height: 100vh;
 }
 .about-profile{
-    margin-right: 20rem;
+    margin-top: 10rem;
 }
-.about-profile h5{
+span{
+    font-size: 50px;
+    font: bold;
+}
+span .my-name{
+    color: rgb(70, 70, 146);
+}
+.my-intro{
+    color: black;
+}
+.about-profile p{
+    color: grey;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.about-profile p{
     color: grey;
 }
 .profile-image{
-    margin-left: 30px;
+    margin-left: 6rem;
+    margin-top: 1.7rem;
     border-radius: 50%;
-    width: 270px;
-    height: 270px;
+    width: 570px;
+    height: 570px;
 }
 .more-about-me-btn{
     border: none;
