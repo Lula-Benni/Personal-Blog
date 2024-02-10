@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu+Mono&display=swap');
+*{
+    box-sizing: border-box;
+}
 nav{
     display: flex;
     margin-top: 15px;
@@ -9,7 +12,7 @@ nav{
 }
 nav .nav{
     margin-right: 8rem;
-
+    float: right;
 }
 nav .icon{
     display: flex;
@@ -28,11 +31,14 @@ section {
     height: 100vh;
 }
 .about-profile{
-    margin-top: 10rem;
+    position: relative;
+    padding-left: 2rem;
+    padding-top: 7rem;
+    width: 45%;
 }
 span{
-    font-size: 50px;
-    font: bold;
+    font-size: 60px;
+    font: bolder;
 }
 span .my-name{
     color: rgb(70, 70, 146);
@@ -49,11 +55,14 @@ span .my-name{
     color: grey;
 }
 .profile-image{
-    margin-left: 6rem;
-    margin-top: 1.7rem;
+    margin-top: 2.4rem;
     border-radius: 50%;
     width: 570px;
     height: 570px;
+    max-width:100%;
+    float: right;
+    margin-left: 5rem;
+    margin-right: 2rem;
 }
 .more-about-me-btn{
     border: none;
@@ -88,45 +97,36 @@ span .my-name{
 
 .card-img-top{
     height: 12rem;
+    max-width:100%;
 }
 .skills-header{
     padding-top: 7rem;
     padding-left: 45%;
 }
+.education-header{
+    padding-left: 40%;
+}
+.first-education{
+    padding-top: 5rem;
+    padding-left: 11rem;
+}
+.first-experience{
+    padding-left: 52rem;
+}
 .vl {
-    position:relative;
+    position:absolute;
     border-left: 6px solid black;
     margin-top: 5rem;
     height: 1000px;
-    right: 11.2rem;
+    left: 50%;
+    top: 158rem;
   }
-.other{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    padding-top: 23rem;
-}
-.other h2{
+footer {
     position: relative;
-    left: 33.5rem;
-}
-.first-education{
-    position: relative;
-    top: 5rem;
-    right: 15rem;
-}
-.first-experience{
-    position: relative;
-    right: 7.6rem;
-    padding-top: 38rem;
-}
-footer{
-    display: block;
     bottom: 0;
     left: 0;
     width: 100%;
-    position:relative;
-    margin-top: 3rem;
+    top: 106rem;
 }
 footer .links{
     display: flex;
