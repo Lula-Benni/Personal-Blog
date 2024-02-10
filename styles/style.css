@@ -11,8 +11,8 @@ nav{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
 }
 nav .nav{
-    margin-right: 8rem;
-    float: right;
+    margin-right: 8%;
+    float: left;
 }
 nav .icon{
     display: flex;
@@ -24,7 +24,6 @@ nav .icon-image{
 }
 nav .icon-name{
     color: grey;
-    padding-right: 53rem;
     padding-top: 1.2rem;
 }
 section {
@@ -104,22 +103,28 @@ span .my-name{
     padding-left: 45%;
 }
 .education-header{
+    font: bold;
+    font-size: 32px;
     padding-left: 40%;
 }
-.first-education{
-    padding-top: 5rem;
-    padding-left: 11rem;
+span .education-and-experience{
+    color: rgb(70, 70, 146);
+    font: bold;
+    font-size: 34px;
 }
-.first-experience{
-    padding-left: 52rem;
+.education-cards .first-education{
+    padding-top: 5rem;
+    margin-right: 45%;
+}
+.education-cards .first-experience{
+    margin-left: 50%;
 }
 .vl {
     position:absolute;
     border-left: 6px solid black;
-    margin-top: 5rem;
     height: 1000px;
     left: 50%;
-    top: 158rem;
+    top: 164rem;
   }
 footer {
     position: relative;
@@ -134,13 +139,13 @@ footer .links{
     align-items: center;
 }
 footer .social-media-links{
-    padding: 1rem 10rem;
+    padding: 1% 10%;
 }
 footer .contact-links{
-    padding: 1rem 10rem;
+    padding: 1% 10%;
 }
 footer .about-links{
-    padding: 1rem 10rem;
+    padding: 1% 10%;;
 }
 footer p{
     padding-bottom: 1rem;
@@ -163,4 +168,51 @@ footer .links i:hover{
     display: flex;
     justify-content:center; 
     align-items: center;
+}
+@media screen and (max-width: 579px){
+    .icon{
+        visibility: hidden;
+    }
+    .profile-image{
+        visibility: hidden;
+    }
+    .education-header{
+        padding-left: 8rem;
+    }
+}
+@media screen and (max-width: 355px){
+    
+    nav .nav{
+        display: inline;
+        position: relative;
+        left: 35%;
+    }
+    .about-profile{
+        margin-top: 90%;
+        padding-top: 1px;
+    }
+}
+/*Responsive footer*/
+@media (max-width: 600px){
+    footer .links{
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+    footer p{
+        padding-left: 25%;
+    }
+}
+@media (max-width: 1030px){
+    .vl{
+        visibility: hidden;
+    }
+    .education-cards .card{
+        width:90%;
+    }
+    .education-cards .first-education{
+        margin: 1px 25%;
+    }
+    .education-cards .first-experience{
+        margin: 1px 25%;
+    }
 }
