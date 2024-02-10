@@ -26,7 +26,7 @@ nav .icon-name{
     padding-top: 1.2rem;
 }
 section {
-    height: 100vh;
+    height: 50% ; 
 }
 .about-profile{
     position: relative;
@@ -53,7 +53,7 @@ span .my-name{
     color: grey;
 }
 .profile-image{
-    margin-top: 4%;
+    margin-top: 5%;
     border-radius: 50%;
     width: 570px;
     height: 570px;
@@ -124,6 +124,7 @@ span .education-and-experience{
     border-left: 6px solid black;
     height: 1000px;
     left: 50%;
+    top: 200%
   }
 footer {
     position: relative;
@@ -192,7 +193,8 @@ footer .links i:hover{
         padding-left: 8rem;
     }
     .about-profile{
-        height: 70%;
+        height: 200%;
+        margin-top: 10rem;
     }
 }
 @media screen and (max-width: 801px){
@@ -202,17 +204,33 @@ footer .links i:hover{
     .my-projects-row-two{
         display: block;
     }
+    .my-projects .card{
+        width:100%;
+        margin: 1px;
+        margin-right: 10%;
+    }
+    .my-projects-row-two .card{
+        width:100%;
+        margin: 1px;
+        margin-right: 10%;
+    }
+    .education-cards .card{
+        width:100%;
+        margin: 1px;
+    }
 }
-@media screen and (max-width: 355px){
+@media screen and (max-width: 380px){
     
     nav .nav{
         display: inline;
+        justify-content:center;
+        align-content: center;
         position: relative;
-        left: 35%;
+        right: 38%;
     }
 }
 /*Responsive footer*/
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
     footer .links{
         flex-direction: column;
         padding: 20px 30px;
@@ -220,11 +238,11 @@ footer .links i:hover{
     footer p{
         padding-left: 25%;
     }
-    #skills{
-        margin-top:25rem;
+    .flex{
+        row-gap: ;
     }
 }
-@media (max-width: 1030px){
+@media screen and (max-width: 1030px){
     .vl{
         visibility: hidden;
     }
@@ -232,10 +250,12 @@ footer .links i:hover{
         width:100%;
     }
     .education-cards .first-education{
-        margin: 1px 25%;
+        margin: 1px;
+        margin-right: 10%;
     }
     .education-cards .first-experience{
-        margin: 1px 25%;
+        margin: 1px;
+        margin-right: 10%;
     }
     .about-profile{
         height: 70%;
