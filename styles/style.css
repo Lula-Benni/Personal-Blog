@@ -99,6 +99,9 @@ span .my-name{
 .skills-header{
     padding-left: 45%;
 }
+#education{
+    display: block;
+}
 .education-header{
     font: bold;
     font-size: 32px;
@@ -121,7 +124,6 @@ span .education-and-experience{
     border-left: 6px solid black;
     height: 1000px;
     left: 50%;
-    bottom: -328%
   }
 footer {
     position: relative;
@@ -172,6 +174,13 @@ footer .links i:hover{
 #projects{
     padding-top: 6%;
 }
+.my-projects{
+    display: flex;
+}
+.my-projects-row-two{
+    display: flex; 
+    padding-bottom: 5rem;
+}
 @media screen and (max-width: 579px){
     .icon{
         visibility: hidden;
@@ -187,13 +196,11 @@ footer .links i:hover{
     }
 }
 @media screen and (max-width: 801px){
-    #projects{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .my-projects{
+        display: block;
     }
-    .my-projects .card{
-        margin-bottom: 10rem;
+    .my-projects-row-two{
+        display: block;
     }
 }
 @media screen and (max-width: 355px){
