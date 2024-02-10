@@ -239,7 +239,10 @@ footer .links i:hover{
         padding-left: 25%;
     }
     .flex{
-        row-gap: ;
+        -webkit-transform:scale(0.5);
+-moz-transform:scale(0.5);
+-ms-transform:scale(0.5);
+transform:scale(0.5);
     }
 }
 @media screen and (max-width: 1030px){
