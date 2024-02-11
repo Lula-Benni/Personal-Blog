@@ -2,6 +2,7 @@
 *{
     box-sizing: border-box;
 }
+/*Navbar*/
 nav{
     display: flex;
     position: fixed;
@@ -25,9 +26,11 @@ nav .icon-name{
     color: grey;
     padding-top: 1.2rem;
 }
-section {
-    height: 50% ; 
+.nav a{
+    color: grey;
+    font-weight: bolder;
 }
+/*About Me section*/
 .about-profile{
     position: relative;
     padding-left: 2rem;
@@ -77,9 +80,21 @@ span .my-name{
     background-color: hwb(220 25% 31%);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
 }
+/*My Projects section*/
 .projects-header{
     padding-left: 45%;
 }
+#projects{
+    padding-top: 6%;
+}
+.my-projects{
+    display: flex;
+}
+.my-projects-row-two{
+    display: flex; 
+    padding-bottom: 5rem;
+}
+/*Bootstrap Cards*/
 .card{
     margin: 1.1rem;
     width:500px;
@@ -96,9 +111,19 @@ span .my-name{
     height: 12rem;
     max-width:100%;
 }
+/*My Skills section*/
 .skills-header{
     padding-left: 45%;
 }
+.flex{
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+}
+#skills{
+    padding-top: 6%;
+}
+/*Education & Experience section*/
 #education{
     display: block;
 }
@@ -127,6 +152,7 @@ span .education-and-experience{
     left: 50%;
     top: 160rem;
   }
+/*Footer*/
 footer {
     position: relative;
     bottom: 0;
@@ -152,10 +178,6 @@ footer p{
     padding-bottom: 1rem;
     padding-left: 40%;
 }
-.nav a{
-    color: grey;
-    font-weight: bolder;
-}
 footer .links i{
     font-size: 18px;
     margin: 15px 8px;
@@ -165,24 +187,11 @@ footer .links i{
 footer .links i:hover{
     color: blue;
 }
-.flex{
-    display: flex;
-    justify-content:center; 
-    align-items: center;
+/*Section Height*/
+section {
+    height: 50% ; 
 }
-#skills{
-    padding-top: 6%;
-}
-#projects{
-    padding-top: 6%;
-}
-.my-projects{
-    display: flex;
-}
-.my-projects-row-two{
-    display: flex; 
-    padding-bottom: 5rem;
-}
+/*education section*/
 @media screen and (max-width: 579px){
     .education-header{
         font-size: 25px;
@@ -208,11 +217,13 @@ footer .links i:hover{
         margin-top: 10rem;
     }
 }
+/*Education Header*/
 @media screen and (max-width: 850px){
     .education-header{
         padding-left: 29%;
     }
 }
+/*My Projects*/
 @media screen and (max-width: 801px){
     .my-projects{
         display: block;
@@ -235,8 +246,8 @@ footer .links i:hover{
         margin: 1px;
     }
 }
+/*Navbar and education header*/
 @media screen and (max-width: 380px){
-    
     nav .nav{
         display: inline;
         justify-content:center;
@@ -260,6 +271,7 @@ footer .links i:hover{
     footer p{
         padding-left: 25%;
     }
+    /*Reducing skills flex div*/
     .flex{
         -webkit-transform:scale(0.5);
         -moz-transform:scale(0.5);
@@ -267,6 +279,7 @@ footer .links i:hover{
         transform:scale(0.5);
     }
 }
+/*Cards and education header section responsiveness*/
 @media screen and (max-width: 1200px){
     .vl{
         visibility: hidden;
