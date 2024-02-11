@@ -105,12 +105,13 @@ span .my-name{
 .education-header{
     font: bold;
     font-size: 32px;
-    padding-left: 40%;
+    padding-left: 39%;
 }
 span .education-and-experience{
     color: rgb(70, 70, 146);
     font: bold;
     font-size: 34px;
+    margin-right: 0.5%;
 }
 .education-cards .first-education{
     padding-top: 5rem;
@@ -124,7 +125,7 @@ span .education-and-experience{
     border-left: 6px solid black;
     height: 1000px;
     left: 50%;
-    top: 200%
+    top: 160rem;
   }
 footer {
     position: relative;
@@ -183,6 +184,16 @@ footer .links i:hover{
     padding-bottom: 5rem;
 }
 @media screen and (max-width: 579px){
+    .education-header{
+        font-size: 25px;
+        position: relative;
+        right: 4rem;
+    }
+    span .education-and-experience{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 579px){
     .icon{
         visibility: hidden;
     }
@@ -195,6 +206,11 @@ footer .links i:hover{
     .about-profile{
         height: 200%;
         margin-top: 10rem;
+    }
+}
+@media screen and (max-width: 850px){
+    .education-header{
+        padding-left: 29%;
     }
 }
 @media screen and (max-width: 801px){
@@ -228,6 +244,12 @@ footer .links i:hover{
         position: relative;
         right: 38%;
     }
+    .education-header{
+        font-size: 24px;
+    }
+    span .education-and-experience{
+        font-size: 24px;
+    }
 }
 /*Responsive footer*/
 @media screen and (max-width: 600px){
@@ -240,12 +262,12 @@ footer .links i:hover{
     }
     .flex{
         -webkit-transform:scale(0.5);
--moz-transform:scale(0.5);
--ms-transform:scale(0.5);
-transform:scale(0.5);
+        -moz-transform:scale(0.5);
+        -ms-transform:scale(0.5);
+        transform:scale(0.5);
     }
 }
-@media screen and (max-width: 1030px){
+@media screen and (max-width: 1200px){
     .vl{
         visibility: hidden;
     }
