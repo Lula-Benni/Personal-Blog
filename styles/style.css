@@ -290,7 +290,7 @@ section {
         right: 2rem;
     }
 }
-/*Nav bar for smaller screens*/
+/*Navbar for smaller screens*/
 @media screen and (max-width: 361px) {
     nav .nav{
         display: inline;
@@ -298,6 +298,16 @@ section {
         align-content: center;
         position: relative;
         right: 25%;
+    }
+}
+/*Navbar for screens smaller than 321px*/
+@media screen and (max-width: 321px) {
+    nav .nav{
+        display: inline;
+        justify-content:center;
+        align-content: center;
+        position: relative;
+        right: -35%;
     }
 }
 /*Responsive footer*/
