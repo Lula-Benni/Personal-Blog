@@ -183,7 +183,7 @@ footer p{
     padding-left: 40%;
 }
 footer .links i{
-    font-size: 14px;
+    font-size: 13px;
     margin: 15px 8px;
     transition: 0.2s;
     color: black;
@@ -198,12 +198,20 @@ section {
 /*education section*/
 @media screen and (max-width: 579px){
     .education-header{
-        font-size: 25px;
+        font-size: 22px;
         position: relative;
         right: 4rem;
     }
     span .education-and-experience{
-        font-size: 25px;
+        font-size: 22px;
+    }
+    .skills-header{
+        position: relative;
+        right: 2rem;
+    }
+    .projects-header{
+        position: relative;
+        right: 3rem;
     }
 }
 @media screen and (max-width: 579px){
@@ -220,11 +228,19 @@ section {
         height: 200%;
         margin-top: 10rem;
     }
+    footer p{
+        font-size: 12px;
+        position: relative;
+        right: 2rem;
+    }
 }
 /*Education Header*/
 @media screen and (max-width: 850px){
     .education-header{
         padding-left: 29%;
+    }
+    footer .links i{
+        font-size: 11px;
     }
 }
 /*My Projects*/
@@ -257,13 +273,30 @@ section {
         justify-content:center;
         align-content: center;
         position: relative;
-        right: 38%;
+        right: 25%;
     }
     .education-header{
-        font-size: 24px;
+        font-size: 20px;
+        position: relative;
+        right: 3rem;
     }
     span .education-and-experience{
         font-size: 24px;
+    }
+    footer p{
+        font-size: 10px;
+        position: relative;
+        right: 2rem;
+    }
+}
+/*Nav bar for smaller screens*/
+@media screen and (max-width: 361px) {
+    nav .nav{
+        display: inline;
+        justify-content:center;
+        align-content: center;
+        position: relative;
+        right: -35%;
     }
 }
 /*Responsive footer*/
@@ -301,5 +334,8 @@ section {
     }
     .about-profile{
         height: 70%;
+    }
+    footer p{
+        padding-left: 30%;
     }
 }
