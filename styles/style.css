@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 *{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-}
+    font-family: 'Rubik', sans-serif;}
 /*Navbar*/
 nav{
     display: flex;
@@ -99,12 +101,14 @@ span .my-name{
     margin: 1.1rem;
     width:500px;
     background-color:transparent;
+    border-color: rgb(70, 70, 146);
 }
 .card .card-title{
     color:black;
 }
 .card .card-text{
     color:black;
+    font-family: sans-serif;
 }
 
 .card-img-top{
@@ -179,7 +183,7 @@ footer p{
     padding-left: 40%;
 }
 footer .links i{
-    font-size: 18px;
+    font-size: 14px;
     margin: 15px 8px;
     transition: 0.2s;
     color: black;
