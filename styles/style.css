@@ -227,6 +227,7 @@ section {
     .about-profile{
         height: 200%;
         margin-top: 10rem;
+        margin-left: 25%;
     }
     footer p{
         font-size: 12px;
@@ -296,7 +297,7 @@ section {
         justify-content:center;
         align-content: center;
         position: relative;
-        right: -35%;
+        right: 25%;
     }
 }
 /*Responsive footer*/
