@@ -309,6 +309,14 @@ section {
         position: relative;
         right: -35%;
     }
+    .education-header{
+        font-size: 15px;
+        position: relative;
+        right: 2rem;
+    }
+    span .education-and-experience{
+        font-size: 15px;
+    }
 }
 /*Responsive footer*/
 @media screen and (max-width: 600px){
