@@ -321,7 +321,8 @@ section {
     }
     input[type=checkbox]:checked ~ .nav-item{
         display: block;
-        padding: 0% 40%;
+        padding-left: 10%;
+        padding-right: 35%;
     }
     .hamburger{
         display: block;
