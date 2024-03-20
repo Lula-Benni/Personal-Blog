@@ -7,6 +7,7 @@
 /*Navbar*/
 nav{
     display: flex;
+    wrap-flex: wrap;
     position: fixed;
     opacity: 0.8;
     margin-top: 0;
@@ -23,6 +24,7 @@ nav .nav{
 }
 nav .icon{
     display: flex;
+    wrap-flex: wrap;
 }
 nav .icon-image{
     padding-left: 3rem;
@@ -48,8 +50,9 @@ input[type=checkbox]{
     color: black;
     cursor: pointer;
     position: absolute;
+    left: 80%;
     top: 0;
-    right: 0;
+    margin-top:1.3rem;
 }
 /*About Me section*/
 .about-profile{
@@ -215,7 +218,10 @@ section {
     height: 50% ; 
 }
 /*education section*/
-@media screen and (max-width: 579px){
+@media screen and (max-width: 594px){
+    .navbar{
+        justify-content: center;
+    }
     .education-header{
         font-size: 22px;
         position: relative;
@@ -233,7 +239,7 @@ section {
         right: 3rem;
     }
 }
-@media screen and (max-width: 579px){
+@media screen and (max-width: 594px){
     .icon{
         visibility: hidden;
     }
@@ -291,25 +297,21 @@ section {
     .icon{
         visibility: visible;
     }
-    nav .nav{
-        display: inline;
-        justify-content:center;
-        align-content: center;
-        position: relative;
-        right: 25%;
-        }
-        .nav-item{
-            display: none;
-        }
-        input[type=checkbox]:checked ~ .nav-item{
-            display: block;
-            padding: 0% 40%;
-        }
-        .hamburger{
-            display: block;
-            left: 3rem;
-            top: -1rem;
-        }
+    nav .icon-image{
+        padding-left: 0rem;
+        height: 60px;
+        width: 70px;
+    }
+    .nav-item{
+        display: none;
+    }
+    input[type=checkbox]:checked ~ .nav-item{
+        display: block;
+        padding: 0% 40%;
+    }
+    .hamburger{
+        display: block;
+    }
     }
     .education-header{
         font-size: 20px;
