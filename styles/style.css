@@ -288,6 +288,9 @@ section {
 }
 /*Navbar and education header*/
 @media screen and (max-width: 380px){
+    .icon{
+        visibility: visible;
+    }
     nav .nav{
         display: inline;
         justify-content:center;
@@ -304,6 +307,8 @@ section {
         }
         .hamburger{
             display: block;
+            left: 3rem;
+            top: -1rem;
         }
     }
     .education-header{
