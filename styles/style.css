@@ -230,6 +230,12 @@ section {
     span .education-and-experience{
         font-size: 22px;
     }
+    .about-profile .my-intro{
+        font-size: 200%;
+    }
+    .about-profile .my-name{
+            font-size: 150%;
+    }
     .skills-header{
         position: relative;
         right: 2rem;
@@ -294,12 +300,20 @@ section {
 }
 /*Navbar and education header*/
 @media screen and (max-width: 380px){
+    .about-profile .my-intro{
+        font-size: 200%;
+    }
+    .about-profile .my-name{
+            font-size: 150%;
+    }
+    .navbar{
+        justify-content: start;
+    }
     .icon{
         visibility: visible;
     }
     nav .icon-image{
         padding-left: 0rem;
-        height: 60px;
         width: 70px;
     }
     .nav-item{
