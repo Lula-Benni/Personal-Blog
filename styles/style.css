@@ -12,6 +12,11 @@ nav{
     margin-top: 0;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
 }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 nav .nav{
     margin-right: 8%;
     float: left;
@@ -31,6 +36,20 @@ nav .icon-name{
 .nav a{
     color: grey;
     font-weight: bolder;
+}
+input[type=checkbox]{
+    display: none;
+}
+.hamburger{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    padding-right: 2rem;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 /*About Me section*/
 .about-profile{
@@ -275,6 +294,17 @@ section {
         align-content: center;
         position: relative;
         right: 25%;
+        }
+        .nav-item{
+            display: none;
+        }
+        input[type=checkbox]:checked ~ .nav-item{
+            display: block;
+            padding: 0% 40%;
+        }
+        .hamburger{
+            display: block;
+        }
     }
     .education-header{
         font-size: 20px;
@@ -291,7 +321,7 @@ section {
     }
 }
 /*Navbar for smaller screens*/
-@media screen and (max-width: 361px) {
+/*@media screen and (max-width: 361px) {
     nav .nav{
         display: inline;
         justify-content:center;
@@ -299,16 +329,16 @@ section {
         position: relative;
         right: 25%;
     }
-}
+}*/
 /*Navbar for screens smaller than 321px*/
 @media screen and (max-width: 321px) {
-    nav .nav{
+    /*nav .nav{
         display: inline;
         justify-content:center;
         align-content: center;
         position: relative;
         right: -35%;
-    }
+    }*/
     .education-header{
         font-size: 15px;
         position: relative;
