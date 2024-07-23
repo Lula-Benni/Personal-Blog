@@ -7,7 +7,7 @@
 /*Navbar*/
 nav{
     display: flex;
-    wrap-flex: wrap;
+    flex-wrap: wrap;
     position: fixed;
     opacity: 0.8;
     margin-top: 0;
@@ -24,7 +24,7 @@ nav .nav{
 }
 nav .icon{
     display: flex;
-    wrap-flex: wrap;
+    flex-wrap: wrap;
 }
 nav .icon-image{
     padding-left: 3rem;
@@ -341,7 +341,7 @@ section {
         position: relative;
         right: 2rem;
     }
-}
+
 /*Navbar for smaller screens*/
 /*@media screen and (max-width: 361px) {
     nav .nav{
@@ -352,6 +352,11 @@ section {
         right: 25%;
     }
 }*/
+@media screen and (max-width: 624px){
+    .hamburger{
+        display: block;
+    }
+}
 /*Navbar for screens smaller than 321px*/
 @media screen and (max-width: 321px) {
     /*nav .nav{
