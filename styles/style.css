@@ -42,6 +42,10 @@ nav .icon-name{
 input[type=checkbox]{
     display: none;
 }
+.nav-items{
+    display: flex;
+    gap: 1rem;
+}
 .hamburger{
     display: none;
     font-size: 24px;
@@ -315,7 +319,7 @@ section {
     nav .icon-image{
         padding-left: 0rem;
         width: 70px;
-    }
+    }/*
     .nav-item{
         display: none;
     }
@@ -326,7 +330,7 @@ section {
     }
     .hamburger{
         display: block;
-    }
+    }*/
     }
     .education-header{
         font-size: 20px;
@@ -353,6 +357,13 @@ section {
     }
 }*/
 @media screen and (max-width: 624px){
+    .nav-items{
+        display: none;
+    }
+    input[type=checkbox]:checked ~ .nav-items{
+        display: block;
+        padding: 5% 40%;
+    }
     .hamburger{
         display: block;
     }
