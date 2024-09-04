@@ -139,7 +139,7 @@ span .my-name{
 
 .card-img-top{
     height: 12rem;
-    max-width:100%;
+    max-width: fit-content;
 }
 /*My Skills section*/
 .skills-header{
