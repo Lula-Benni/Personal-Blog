@@ -24,7 +24,7 @@ nav .nav{
 }
 nav .icon{
     display: flex;
-    flex-wrap: wrap;
+    white-space: nowrap;
 }
 nav .icon-image{
     padding-left: 3rem;
@@ -54,7 +54,7 @@ input[type=checkbox]{
     color: black;
     cursor: pointer;
     position: absolute;
-    left: 80%;
+    left: 90%;
     top: 0;
     margin-top:1.3rem;
 }
@@ -250,9 +250,6 @@ section {
     }
 }
 @media screen and (max-width: 594px){
-    .icon{
-        visibility: hidden;
-    }
     .profile-image{
         visibility: hidden;
     }
@@ -313,13 +310,7 @@ section {
     .navbar{
         justify-content: start;
     }
-    .icon{
-        visibility: visible;
-    }
-    nav .icon-image{
-        padding-left: 0rem;
-        width: 70px;
-    }/*
+    /*
     .nav-item{
         display: none;
     }
@@ -356,16 +347,26 @@ section {
         right: 25%;
     }
 }*/
-@media screen and (max-width: 624px){
+@media screen and (max-width: 645px){
     .nav-items{
         display: none;
     }
     input[type=checkbox]:checked ~ .nav-items{
         display: block;
-        padding: 5% 40%;
+        position: absolute;
+        left: 8rem;
+        top: 1.2rem;
+        width: fit-content;
+        padding-left: 45%;
+    }
+    .nav-item{
+        white-space: nowrap;
     }
     .hamburger{
         display: block;
+    }
+    .icon{
+        margin-right: 40%;
     }
 }
 /*Navbar for screens smaller than 321px*/
