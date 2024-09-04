@@ -24,7 +24,7 @@ nav .nav{
 }
 nav .icon{
     display: flex;
-    flex-wrap: wrap;
+    white-space: nowrap;
 }
 nav .icon-image{
     padding-left: 3rem;
@@ -42,6 +42,10 @@ nav .icon-name{
 input[type=checkbox]{
     display: none;
 }
+.nav-items{
+    display: flex;
+    gap: 1rem;
+}
 .hamburger{
     display: none;
     font-size: 24px;
@@ -50,7 +54,7 @@ input[type=checkbox]{
     color: black;
     cursor: pointer;
     position: absolute;
-    left: 80%;
+    left: 90%;
     top: 0;
     margin-top:1.3rem;
 }
@@ -135,7 +139,7 @@ span .my-name{
 
 .card-img-top{
     height: 12rem;
-    max-width:100%;
+    max-width: fit-content;
 }
 /*My Skills section*/
 .skills-header{
@@ -152,6 +156,9 @@ span .my-name{
 /*Education & Experience section*/
 #education{
     display: block;
+}
+.education-cards .card{
+    align-items: center;
 }
 .education-header{
     font: bold;
@@ -246,19 +253,8 @@ section {
     }
 }
 @media screen and (max-width: 594px){
-    .icon{
-        visibility: hidden;
-    }
-    .profile-image{
-        visibility: hidden;
-    }
     .education-header{
         padding-left: 8rem;
-    }
-    .about-profile{
-        height: 200%;
-        margin-top: 10rem;
-        margin-left: 25%;
     }
     footer p{
         font-size: 12px;
@@ -306,16 +302,7 @@ section {
     .about-profile .my-name{
             font-size: 150%;
     }
-    .navbar{
-        justify-content: start;
-    }
-    .icon{
-        visibility: visible;
-    }
-    nav .icon-image{
-        padding-left: 0rem;
-        width: 70px;
-    }
+    /*
     .nav-item{
         display: none;
     }
@@ -326,7 +313,7 @@ section {
     }
     .hamburger{
         display: block;
-    }
+    }*/
     }
     .education-header{
         font-size: 20px;
@@ -352,9 +339,33 @@ section {
         right: 25%;
     }
 }*/
-@media screen and (max-width: 624px){
+@media screen and (max-width: 645px){
+    .profile-image{
+        display: none;
+    }
+    .about-profile{
+        margin-top: 5rem;
+        width: 100vh;
+    }
+    .nav-items{
+        display: none;
+        width: fit-content;
+    }
+    input[type=checkbox]:checked ~ .nav-items{
+        display: block;
+        position: absolute;
+        left: 17.5rem;
+        /*top: 1.2rem;
+        padding-left: 35%;*/
+    }
+    .nav-item{
+        white-space: nowrap;
+    }
     .hamburger{
         display: block;
+    }
+    .navbar{
+        justify-content: start;
     }
 }
 /*Navbar for screens smaller than 321px*/
@@ -395,7 +406,7 @@ section {
 /*Cards and education header section responsiveness*/
 @media screen and (max-width: 1200px){
     .vl{
-        visibility: hidden;
+        display: none;
     }
     .education-cards .card{
         width:100%;
