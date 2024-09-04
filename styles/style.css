@@ -157,6 +157,9 @@ span .my-name{
 #education{
     display: block;
 }
+.education-cards .card{
+    align-items: center;
+}
 .education-header{
     font: bold;
     font-size: 32px;
@@ -250,16 +253,8 @@ section {
     }
 }
 @media screen and (max-width: 594px){
-    .profile-image{
-        visibility: hidden;
-    }
     .education-header{
         padding-left: 8rem;
-    }
-    .about-profile{
-        height: 200%;
-        margin-top: 10rem;
-        margin-left: 25%;
     }
     footer p{
         font-size: 12px;
@@ -307,9 +302,6 @@ section {
     .about-profile .my-name{
             font-size: 150%;
     }
-    .navbar{
-        justify-content: start;
-    }
     /*
     .nav-item{
         display: none;
@@ -348,16 +340,23 @@ section {
     }
 }*/
 @media screen and (max-width: 645px){
+    .profile-image{
+        display: none;
+    }
+    .about-profile{
+        margin-top: 5rem;
+        width: 100vh;
+    }
     .nav-items{
         display: none;
+        width: fit-content;
     }
     input[type=checkbox]:checked ~ .nav-items{
         display: block;
         position: absolute;
-        left: 8rem;
-        top: 1.2rem;
-        width: fit-content;
-        padding-left: 45%;
+        left: 17.5rem;
+        /*top: 1.2rem;
+        padding-left: 35%;*/
     }
     .nav-item{
         white-space: nowrap;
@@ -365,8 +364,8 @@ section {
     .hamburger{
         display: block;
     }
-    .icon{
-        margin-right: 40%;
+    .navbar{
+        justify-content: start;
     }
 }
 /*Navbar for screens smaller than 321px*/
@@ -407,7 +406,7 @@ section {
 /*Cards and education header section responsiveness*/
 @media screen and (max-width: 1200px){
     .vl{
-        visibility: hidden;
+        display: none;
     }
     .education-cards .card{
         width:100%;
