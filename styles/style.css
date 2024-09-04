@@ -157,7 +157,7 @@ span .my-name{
 #education{
     display: block;
 }
-.education-cards .card{
+.card{
     align-items: center;
 }
 .education-header{
