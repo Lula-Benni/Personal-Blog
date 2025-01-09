@@ -72,6 +72,13 @@ span{
 span .my-name{
     color: rgb(70, 70, 146);
 }
+#occupation{
+    font-size: 50px;
+}
+#and-occupations{
+    font-size: 40px;
+    color: rgb(70, 70, 146);
+}
 .my-intro{
     color: black;
 }
@@ -242,6 +249,12 @@ section {
     }
     .about-profile .my-name{
             font-size: 150%;
+    }
+    #occupation{
+        font-size: 100%;
+    }
+    #and-occupations{
+        font-size: 90%;
     }
     .skills-header{
         position: relative;
