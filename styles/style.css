@@ -72,6 +72,13 @@ span{
 span .my-name{
     color: rgb(70, 70, 146);
 }
+#occupation{
+    font-size: 50px;
+}
+#and-occupations{
+    font-size: 40px;
+    color: rgb(70, 70, 146);
+}
 .my-intro{
     color: black;
 }
@@ -135,6 +142,7 @@ span .my-name{
 .card .card-text{
     color:black;
     font-family: sans-serif;
+    font-size:medium;
 }
 
 .card-img-top{
@@ -163,7 +171,7 @@ span .my-name{
 .education-header{
     font: bold;
     font-size: 32px;
-    padding-left: 39%;
+    padding-left: 45%;
 }
 span .education-and-experience{
     color: rgb(70, 70, 146);
@@ -178,12 +186,12 @@ span .education-and-experience{
 .education-cards .first-experience{
     margin-left: 50%;
 }
-.vl {
+.vertical-line {
     position:absolute;
     border-left: 6px solid black;
-    height: 1220px;
+    height: 1320px;
     left: 50%;
-    top: 160rem;
+    top: 165rem;
   }
 /*Footer*/
 footer {
@@ -242,6 +250,12 @@ section {
     }
     .about-profile .my-name{
             font-size: 150%;
+    }
+    #occupation{
+        font-size: 100%;
+    }
+    #and-occupations{
+        font-size: 90%;
     }
     .skills-header{
         position: relative;
@@ -405,7 +419,7 @@ section {
 }
 /*Cards and education header section responsiveness*/
 @media screen and (max-width: 1200px){
-    .vl{
+    .vertical-line{
         display: none;
     }
     .education-cards .card{
@@ -413,11 +427,10 @@ section {
     }
     .education-cards .first-education{
         margin: 1px;
-        margin-right: 10%;
     }
     .education-cards .first-experience{
         margin: 1px;
-        margin-right: 10%;
+        margin-top: 20px;
     }
     .about-profile{
         height: 70%;
